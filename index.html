@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RayaVerse - Where Code Meets Coffee</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -156,34 +165,6 @@
 
         .landing.hidden {
             display: none;
-        }
-
-        .steam {
-            position: absolute;
-            bottom: 40%;
-            width: 100%;
-            height: 200px;
-            pointer-events: none;
-        }
-
-        .steam-line {
-            position: absolute;
-            width: 3px;
-            height: 80px;
-            background: linear-gradient(to top, transparent, rgba(245, 230, 211, 0.3), transparent);
-            animation: steam-rise 3s ease-in-out infinite;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .steam-line:nth-child(1) { animation-delay: 0s; left: 48%; }
-        .steam-line:nth-child(2) { animation-delay: 0.5s; left: 50%; }
-        .steam-line:nth-child(3) { animation-delay: 1s; left: 52%; }
-
-        @keyframes steam-rise {
-            0% { bottom: 0; opacity: 0; transform: translateX(-50%) translateY(0); }
-            50% { opacity: 0.5; transform: translateX(-50%) translateY(-30px) scale(1.2); }
-            100% { bottom: 100px; opacity: 0; transform: translateX(-50%) translateY(-60px) scale(1.5); }
         }
 
         .landing h1 {
@@ -366,7 +347,7 @@
         }
 
         .section {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 5rem 5%;
             min-height: 100vh;
@@ -429,11 +410,6 @@
             object-fit: cover;
         }
 
-        @keyframes rotate-border {
-            from { filter: hue-rotate(0deg); }
-            to { filter: hue-rotate(360deg); }
-        }
-
         .about-text h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
@@ -473,7 +449,7 @@
 
         .experience-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
         }
 
@@ -481,9 +457,6 @@
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-        }
-
-        @media (max-width: 1200px) {
             .experience-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1011,28 +984,28 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-icon">☕</div>
-                    <h3>Matcha - Cafe-Themed Portfolio</h3>
-                    <p class="project-subtitle">Self-Taught Web Development | October 2025</p>
+                    <h3>Matcha - The Waiting Room App</h3>
+                    <p class="project-subtitle">Product Engineer (Contract) | November 2025 – April 2026</p>
                     <ul style="list-style: none; padding-left: 0; margin: 1rem 0;">
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Designed and developed an interactive, cafe-themed portfolio website using AI-assisted coding techniques
+                            Designed, developed, and shipped new user-facing features in TypeScript across web and mobile
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Self-taught HTML, CSS, and JavaScript to create smooth animations and responsive design
+                            Integrated Google Firebase to power real-time data syncing and automated notifications
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Features include landing page with steam animations, AI chatbot widget, and mobile-responsive layout
+                            Resolved high-impact scheduling defects through debugging and end-to-end QA testing
                         </li>
                     </ul>
                     <div class="tech-tags">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Firebase</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">AI-Assisted Coding</span>
-                        <span class="tech-tag">Self-Taught</span>
+                        <span class="tech-tag">QA Testing</span>
+                        <span class="tech-tag">UI/UX Design</span>
                     </div>
                 </div>
 
@@ -1047,11 +1020,11 @@
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Focused on intuitive design and seamless user flow with product strategy alignment
+                            Drove product strategy, feature prioritization, and usability testing
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Collaborated on feature prioritization and usability testing to meet user needs
+                            Applied Agile sprint cycles and GitHub version control for efficient development
                         </li>
                     </ul>
                     <div class="tech-tags">
@@ -1074,11 +1047,11 @@
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Oversaw system design, requirements gathering, and installation planning with Ubiquiti UNVR solutions
+                            Oversaw system design, requirements gathering, and installation planning
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Coordinated between departments to deliver scalable, cost-efficient network model
+                            Coordinated cross-departmentally to deliver a scalable, cost-efficient network model
                         </li>
                     </ul>
                     <div class="tech-tags">
@@ -1137,21 +1110,47 @@
             </h1>
             <div class="experience-grid">
                 <div class="project-card">
+                    <div class="project-icon">👩‍💻</div>
+                    <h3>Product Engineer (Contract)</h3>
+                    <p class="project-subtitle">The Waiting Room App | November 2025 – April 2026</p>
+                    <ul style="list-style: none; padding-left: 0; margin: 1rem 0;">
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
+                            Designed, developed, and shipped new user-facing features in TypeScript across web and mobile
+                        </li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
+                            Integrated Google Firebase to power real-time data syncing and automated notifications
+                        </li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
+                            Resolved high-impact scheduling defects through debugging and end-to-end QA testing
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">QA Testing</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <div class="project-icon">👩‍🏫</div>
                     <h3>Science Teacher</h3>
                     <p class="project-subtitle">The Bounty Collegium | November 2024 - June 2025</p>
                     <ul style="list-style: none; padding-left: 0; margin: 1rem 0;">
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Designed and delivered engaging STEM-based lessons for 6th and 7th graders
+                            Designed and delivered hands-on STEM curriculum for 6th and 7th graders
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Managed curriculum planning, execution, and progress tracking
+                            Managed curriculum planning, execution, and progress tracking end-to-end
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Created inclusive learning environment promoting curiosity, critical thinking, and problem-solving
+                            Leveraged assessment data to identify trends and adjust instruction
                         </li>
                     </ul>
                     <div class="tech-tags">
@@ -1169,15 +1168,15 @@
                     <ul style="list-style: none; padding-left: 0; margin: 1rem 0;">
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Managed cross-platform social media presence (Instagram 13K, TikTok) increasing engagement by 25%
+                            Grew cross-platform social presence, driving 25% increase in brand engagement
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Designed and executed data-informed campaigns achieving 2K+ new followers
+                            Executed analytics-driven campaigns and reported KPIs to leadership
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Collaborated across design, marketing, and influencer teams for seamless content production
+                            Partnered cross-functionally with design, marketing, and influencer teams
                         </li>
                     </ul>
                     <div class="tech-tags">
@@ -1195,15 +1194,15 @@
                     <ul style="list-style: none; padding-left: 0; margin: 1rem 0;">
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Coordinated communication strategies and marketing materials for national youth conferences
+                            Led communication strategy and marketing assets for national youth conferences
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Utilized Canva and Adobe tools to design campaigns reaching 1,000+ participants
+                            Produced print and digital campaign assets in Canva and Adobe tools
                         </li>
                         <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: #8b6f47;">🫘</span>
-                            Collected and analyzed engagement data to inform event marketing decisions
+                            Analyzed engagement data to inform marketing decisions and improve content
                         </li>
                     </ul>
                     <div class="tech-tags">
@@ -1221,20 +1220,34 @@
             <h1 class="section-title">Coffee Beans & Tools 🫘</h1>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Project Management</h3>
+                    <h3>Product Engineering</h3>
                     <ul>
-                        <li>Agile & Scrum</li>
+                        <li>Full-Stack Development</li>
+                        <li>Software Development Lifecycle (SDLC)</li>
+                        <li>Feature Design & Development</li>
                         <li>Product Strategy</li>
-                        <li>Cross-functional Leadership</li>
+                        <li>User-Centered Design</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <h3>Programming</h3>
                     <ul>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
                         <li>Python (Intermediate)</li>
                         <li>Java</li>
                         <li>SQL (Intermediate)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & Backend</h3>
+                    <ul>
+                        <li>Firebase</li>
+                        <li>Google Cloud</li>
+                        <li>REST APIs</li>
+                        <li>Git & GitHub</li>
                     </ul>
                 </div>
 
@@ -1253,22 +1266,35 @@
                         <li>Figma (UI/UX)</li>
                         <li>Wireframing & Prototyping</li>
                         <li>Mobile App Design</li>
+                        <li>Responsive Web Design</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <h3>Technical Tools</h3>
                     <ul>
-                        <li>GitHub & Version Control</li>
-                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>Claude Code</li>
                         <li>IntelliJ IDEA</li>
+                        <li>GitHub & Version Control</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Development Practices</h3>
+                    <ul>
+                        <li>Agile & Scrum</li>
+                        <li>Software Testing & Debugging</li>
+                        <li>QA Testing (Web & Mobile)</li>
+                        <li>Cross-Functional Collaboration</li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                     <h3>Emerging Tech</h3>
                     <ul>
-                        <li>AI & Machine Learning</li>
+                        <li>AI & Machine Learning Concepts</li>
                         <li>Network Systems</li>
                         <li>Digital Product Development</li>
                     </ul>
@@ -1422,9 +1448,16 @@
             location: "Ohio (Willing to relocate)",
             education: "B.S. in Computer Science Engineering Technology from University of Toledo, graduated December 2023",
             
-            summary: "Results-driven Project Management Professional with experience in engineering coordination, data analysis, and software systems. Skilled in leading projects from planning to completion, aligning technology with business goals, and improving operational efficiency. Passionate about applying data-driven insights and scalable solutions to drive innovation, with growing expertise in AI, network systems, and digital product development.",
+            summary: "Product Engineer with hands-on experience designing, building, and shipping full-stack web and mobile applications. Proficient in TypeScript, Java, Python, and Firebase. Experienced across the full software development lifecycle, including feature design, rapid prototyping, software testing, debugging, and iterative release in Agile environments.",
             
             projects: [
+                {
+                    name: "The Waiting Room App",
+                    type: "Product Engineer (Contract)",
+                    description: "Built user-facing features in TypeScript for web and mobile, integrated Firebase for real-time data syncing, resolved scheduling defects",
+                    skills: ["TypeScript", "Firebase", "JavaScript", "QA Testing", "UI/UX Design"],
+                    period: "November 2025 - April 2026"
+                },
                 {
                     name: "Cafe-Themed Portfolio",
                     type: "Self-Taught Web Development",
@@ -1454,6 +1487,12 @@
             
             experience: [
                 {
+                    title: "Product Engineer (Contract)",
+                    company: "The Waiting Room App",
+                    period: "November 2025 - April 2026",
+                    description: "Designed and shipped features in TypeScript, integrated Firebase, debugged scheduling defects, performed QA testing"
+                },
+                {
                     title: "Science Teacher",
                     company: "The Bounty Collegium",
                     period: "November 2024 - June 2025",
@@ -1474,11 +1513,13 @@
             ],
             
             skills: {
-                "Project Management": ["Agile & Scrum", "Product Strategy", "Cross-functional Leadership"],
-                "Programming": ["Python (Intermediate)", "Java", "SQL (Intermediate)"],
+                "Product Engineering": ["Full-Stack Development", "SDLC", "Feature Design", "Product Strategy", "User-Centered Design"],
+                "Programming": ["TypeScript", "JavaScript", "Python (Intermediate)", "Java", "SQL (Intermediate)"],
+                "Cloud & Backend": ["Firebase", "Google Cloud", "REST APIs", "Git & GitHub"],
                 "Data & Analytics": ["Data Analysis", "Power BI", "Excel Dashboards"],
-                "Design & Development": ["Figma (UI/UX)", "Wireframing & Prototyping", "Mobile App Design"],
-                "Technical Tools": ["GitHub & Version Control", "Visual Studio", "IntelliJ IDEA"],
+                "Design & Development": ["Figma (UI/UX)", "Wireframing & Prototyping", "Mobile App Design", "Responsive Web Design"],
+                "Technical Tools": ["Visual Studio Code", "Claude Code", "IntelliJ IDEA", "GitHub & Version Control", "Canva"],
+                "Development Practices": ["Agile & Scrum", "Software Testing & Debugging", "QA Testing (Web & Mobile)", "Cross-Functional Collaboration"],
                 "Emerging Tech": ["AI & Machine Learning", "Network Systems", "Digital Product Development"]
             }
         };
@@ -1523,6 +1564,16 @@
                 return "Hi there! ☕ I'm Raya's virtual barista. I can tell you about her experience, projects, skills, or education. What would you like to know?";
             }
             
+            // Product Engineer / Latest work
+            if (msg.match(/\b(product engineer|waiting room|latest|recent|current|newest)\b/)) {
+                return "Raya's most recent role is Product Engineer (Contract) at The Waiting Room App! She designed and shipped features in TypeScript across web and mobile, integrated Firebase for real-time data syncing, and resolved high-impact scheduling defects. This was from November 2025 to April 2026.";
+            }
+
+            // TypeScript / Firebase
+            if (msg.match(/\b(typescript|firebase|google cloud)\b/)) {
+                return "Raya has hands-on experience with TypeScript and Firebase from her Product Engineer role at The Waiting Room App. She built user-facing features in TypeScript and integrated Firebase to power real-time data syncing, automated email confirmations, and notifications.";
+            }
+            
             // Contact information
             if (msg.match(/\b(email|contact|reach|get in touch)\b/)) {
                 return `You can reach Raya at ${knowledge.email} or connect on LinkedIn at ${knowledge.linkedin}. She's based in ${knowledge.location}!`;
@@ -1536,22 +1587,10 @@
             // Projects
             if (msg.match(/\b(project|portfolio|built|created|developed)\b/)) {
                 let response = "Raya has worked on several exciting projects:\n\n";
-                knowledge.projects.forEach(project => {
+                knowledge.projects.slice(0, 3).forEach(project => {
                     response += `• ${project.name}: ${project.description}\n`;
                 });
-                return response + "\n Would you like to know more about any specific project?";
-            }
-            
-            // Halal Eats App
-            if (msg.match(/\b(halal|eats|restaurant|app)\b/)) {
-                const project = knowledge.projects.find(p => p.name === "Halal Eats App");
-                return `The Halal Eats App is one of Raya's key projects! ${project.description}. Skills used: ${project.skills.join(", ")}.`;
-            }
-            
-            // Portfolio website
-            if (msg.match(/\b(portfolio|website|this site)\b/)) {
-                const project = knowledge.projects.find(p => p.name === "Cafe-Themed Portfolio");
-                return `This portfolio website was ${project.description}! It showcases Raya's self-taught coding abilities and creativity. Pretty cool, right? ☕`;
+                return response + "\nWould you like to know more about any specific project?";
             }
             
             // Experience
@@ -1563,29 +1602,19 @@
                 return response + "\nWant to know more about any of these roles?";
             }
             
-            // Teacher role
-            if (msg.match(/\b(teacher|teaching|stem|education)\b/)) {
-                const exp = knowledge.experience.find(e => e.title === "Science Teacher");
-                return `Raya is currently a ${exp.title} at ${exp.company}! ${exp.description}. She brings a unique blend of technical and teaching skills!`;
-            }
-            
             // Skills
-            if (msg.match(/\b(skill|skills|expertise|proficient|know)\b/)) {
+            if (msg.match(/\b(skill|skills|expertise|proficient|know|technologies)\b/)) {
                 let response = "Raya has a diverse skill set including:\n\n";
-                Object.keys(knowledge.skills).forEach(category => {
-                    response += `${category}: ${knowledge.skills[category].join(", ")}\n`;
+                const topCategories = Object.keys(knowledge.skills).slice(0, 4);
+                topCategories.forEach(category => {
+                    response += `${category}: ${knowledge.skills[category].slice(0, 3).join(", ")}\n`;
                 });
-                return response;
+                return response + "\nAnd many more! Check out the Skills section for the full list.";
             }
             
             // Programming languages
             if (msg.match(/\b(programming|code|languages|python|java|sql)\b/)) {
-                return `Raya is proficient in Python (Intermediate), Java, and SQL (Intermediate). She also has experience with HTML, CSS, JavaScript, and is continuously expanding her programming expertise!`;
-            }
-            
-            // AI and Machine Learning
-            if (msg.match(/\b(ai|artificial intelligence|machine learning|ml)\b/)) {
-                return "Raya has growing expertise in AI & Machine Learning concepts! She's passionate about applying data-driven insights and leveraging emerging technologies like AI to drive innovation.";
+                return `Raya is proficient in TypeScript, JavaScript, Python (Intermediate), Java, and SQL (Intermediate). She's continuously expanding her programming expertise!`;
             }
             
             // Location
@@ -1600,7 +1629,7 @@
             
             // Hire/Availability
             if (msg.match(/\b(hire|available|looking for|recruit)\b/)) {
-                return `Raya is actively seeking opportunities! She's a results-driven professional with project management, development, and data analysis skills. Reach out at ${knowledge.email} to discuss opportunities!`;
+                return `Raya is actively seeking opportunities! She's a Product Engineer with full-stack development, project management, and data analysis skills. Reach out at ${knowledge.email} to discuss opportunities!`;
             }
             
             // Resume
@@ -1611,6 +1640,12 @@
             // About Raya
             if (msg.match(/\b(who|about|tell me)\b/)) {
                 return knowledge.summary;
+            }
+            
+            // Portfolio website
+            if (msg.match(/\b(portfolio|website|this site)\b/)) {
+                const project = knowledge.projects.find(p => p.name === "Cafe-Themed Portfolio");
+                return `This portfolio website was ${project.description}! It showcases Raya's self-taught coding abilities and creativity. Pretty cool, right? ☕`;
             }
             
             // Default response
